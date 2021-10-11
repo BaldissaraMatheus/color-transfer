@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Toggle from './components/Toggle'
 import Dropzone from './components/Dropzone';
 import ResultCanvas from "./components/ResultCanvas";

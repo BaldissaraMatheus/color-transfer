@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 interface ToggleProps {
 	onClick: React.MouseEventHandler;
@@ -10,10 +10,6 @@ const Toggle: React.FC<ToggleProps> = (props: ToggleProps) => {
 	function handleOnClick(event: React.MouseEvent<Element, MouseEvent>) {
 		setActive(!active);
 		props.onClick(event)
-	}
-
-	function getActiveClass() {
-		return `justify-${active ? 'end' : 'start'}`;
 	}
 
 	return (

@@ -1,4 +1,4 @@
-import React, { ChangeEvent, ChangeEventHandler, ReactEventHandler  } from 'react';
+import React from 'react';
 
 interface DropzoneProps {
 	label: string;
