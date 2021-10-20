@@ -3,3 +3,6 @@
 This an implementation of the color transfer method [Color Transfer Between Images](https://www.cs.tau.ac.il/~turkel/imagepapers/ColorTransfer.pdf) made with WebGL. The user interface was created with React, Typescript and TailwindCSS.
 
 You can experiment it on [here](https://6163d99efb0bc600072ea2b1--blissful-mestorf-5654ad.netlify.app/).
+
+## To be improved
+The overall performance is still pretty bad, it works fine with small images (I tested images with the resolution 100x100), but for images that are much bigger the WebGL loses its context and the browser may crash.
