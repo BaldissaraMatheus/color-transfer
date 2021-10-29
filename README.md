@@ -5,4 +5,4 @@ This an implementation of the color transfer method [Color Transfer Between Imag
 You can experiment it on [here](https://6163d99efb0bc600072ea2b1--blissful-mestorf-5654ad.netlify.app/).
 
 ## To be improved
-The overall performance is still pretty bad, it works fine with small images (I tested images with the resolution 100x100 from https://source.unsplash.com/random/100x100), but for images that are much bigger the WebGL loses its context and the browser may crash.
+The overall performance is still pretty bad, it works fine with small images (I tested images with the resolution 100x100 from https://source.unsplash.com/random/100x100), but for images that are much bigger WebGL loses its context and the browser may crash.
