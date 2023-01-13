@@ -7,12 +7,12 @@ interface ResultCanvasProps {
 }
 
 const ResultCanvas: React.FC<ResultCanvasProps> = (props: ResultCanvasProps) => {
-	let [palletImageWidth, setPalletImageWidth] = useState<number>(0);
-	let [palletImageHeight, setPalletImageHeight] = useState<number>(0);
-	let [targetImageWidth, setTargetImageWidth] = useState<number>(0);
-	let [targetImageHeight, setTargetImageHeight] = useState<number>(0);
-  let [largestWidth, setLargestWidth] = useState<number>(0);
-  let [largestHeight, setLargestHeight] = useState<number>(0);
+	const [palletImageWidth, setPalletImageWidth] = useState<number>(0);
+	const [palletImageHeight, setPalletImageHeight] = useState<number>(0);
+	const [targetImageWidth, setTargetImageWidth] = useState<number>(0);
+	const [targetImageHeight, setTargetImageHeight] = useState<number>(0);
+  const [largestWidth, setLargestWidth] = useState<number>(0);
+  const [largestHeight, setLargestHeight] = useState<number>(0);
 
   useEffect(() => {
     renderResultImage(
@@ -217,13 +217,6 @@ const ResultCanvas: React.FC<ResultCanvasProps> = (props: ResultCanvasProps) => 
             sourceTotalA += labSource.y;
             sourceTotalB += labSource.z;
           }
-          // if (i <= ${targetImageWidth}.0 && j <= ${targetImageHeight}.0) {
-          //   vec4 colorPixelTarget = texture2D(u_image1, vec2(i / ${targetImageWidth}.0, j / ${targetImageHeight}.0));
-          //   vec3 labTarget = lms2lab(rgb2lms(vec3(colorPixelTarget)));
-          //   targetTotalL += labTarget.x;
-          //   targetTotalA += labTarget.y;
-          //   targetTotalB += labTarget.z;
-          // }
         }
       }
       float totalSize = size.x * size.y;
